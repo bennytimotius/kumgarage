@@ -13,8 +13,8 @@ class Home_c extends CI_Controller {
 		if($this->session->userdata('status') != "login"){
 			$this->load->view('Home');
 		}else{ 
-			redirect(base_url('user'));
-// 			$this->load->view('logged/Home_user');
+// 			redirect(base_url('user'));
+			$this->load->view('logged/Home_user');
 		}
 	}
 	
